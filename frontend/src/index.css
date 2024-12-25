@@ -1,0 +1,115 @@
+/* Основной фон и цвет текста */
+body {
+  background-color: #2a2f23;  /* Темный фон */
+  color: #c3e88d;              /* Зеленоватый цвет текста */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Стиль контейнера для приложения */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Заголовок приложения */
+h2 {
+  font-size: 36px;
+  color: #9ccc65;  /* Яркий зеленый */
+  margin-bottom: 20px;
+}
+
+/* Кнопки управления пайплайном */
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin: 5px;
+}
+
+/* Различные цвета для кнопок */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Стиль для кнопки Run */
+button:nth-of-type(1) {
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Стиль для кнопки Stop */
+button:nth-of-type(2) {
+  background-color: #d9534f;
+  color: white;
+}
+
+/* Стиль для кнопки Restart */
+button:nth-of-type(3) {
+  background-color: #5bc0de;
+  color: white;
+}
+
+/* Поле ввода имени задачи */
+input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #9ccc65;
+  background-color: #394a34;
+  color: #c3e88d;
+  border-radius: 5px;
+}
+
+/* Кнопка добавления задачи */
+button:nth-of-type(4) {
+  background-color: #9ccc65;
+  color: #2a2f23;
+  border-radius: 5px;
+}
+
+/* Стили для логов */
+h4 {
+  font-size: 20px;
+  color: #9ccc65;
+}
+
+button {
+  margin-top: 10px;
+}
+
+
+
+/* Логовое окно */
+div > .logs {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* Мини карта и background */
+.react-flow__background {
+  background-color: #1f2226 ;
+}
+
+.react-flow__node {
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.react-flow__node-input {
+  background-color: #9ccc65;
+}
+
+.react-flow__node-default {
+  background-color: #f0ad4e;
+}
+
+.react-flow__node-output {
+  background-color: #5cb85c;
+}

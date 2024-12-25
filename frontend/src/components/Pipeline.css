@@ -1,0 +1,134 @@
+/* Основной контейнер */
+.pipeline-container {
+  background-color: #f0f0f0; /* Светлый фон */
+  color: #333; /* Темный текст */
+  padding: 20px;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Заголовок */
+.pipeline-header {
+  text-align: center;
+  color: #ff6f61; /* Коралловый */
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-shadow: 0px 0px 10px rgba(255, 111, 97, 0.5);
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+/* Кнопки */
+.pipeline-button {
+  background-color: #ff6f61; /* Коралловый */
+  color: #fff; /* Белый текст */
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px;
+  box-shadow: 0px 0px 15px rgba(255, 111, 97, 0.5);
+}
+
+/* Эффект при наведении на кнопку */
+.pipeline-button:hover {
+  background-color: #ff3b2f; /* Более яркий коралловый */
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 25px rgba(255, 111, 97, 0.7);
+}
+
+/* Поле ввода */
+.pipeline-input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #ff6f61; /* Коралловый */
+  background-color: #fff; /* Белый фон */
+  color: #333; /* Темный текст */
+  border-radius: 20px;
+  width: 200px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.pipeline-input:focus {
+  outline: none;
+  border-color: #ff3b2f; /* Более яркий коралловый */
+  background-color: #f0f0f0; /* Светлый фон при фокусе */
+}
+
+/* Логи и детали задач */
+.pipeline-task,
+.pipeline-task-logs {
+  background-color: #fff; /* Белый фон */
+  border: 2px solid #ff6f61; /* Коралловый */
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 20px;
+  width: 80%;
+  box-shadow: 0px 0px 20px rgba(255, 111, 97, 0.5);
+}
+
+/* Заголовок логов и задач */
+.pipeline-task h4,
+.pipeline-task-logs h4 {
+  color: #ff6f61; /* Коралловый */
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 10px rgba(255, 111, 97, 0.5);
+}
+
+/* Текст логов и задач */
+.pipeline-task p,
+.pipeline-task-logs p {
+  color: #555; /* Темный серый текст */
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+/* Контейнер ReactFlow */
+.reactflow-container {
+  height: 500px;
+  width: 90%;
+  margin: 20px auto;
+  border: 2px solid #ff6f61; /* Коралловый */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(255, 111, 97, 0.5);
+}
+
+/* Узлы ReactFlow */
+.reactflow-container .react-flow__node {
+  background-color: #fff; /* Белый фон */
+  color: #ff6f61; /* Коралловый текст */
+  border: 2px solid #ff6f61; /* Коралловый */
+  border-radius: 15px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Эффект при наведении на узел */
+.reactflow-container .react-flow__node:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 25px rgba(255, 111, 97, 0.7);
+}
+
+/* Контролы и мини-карта ReactFlow */
+.reactflow-container .react-flow__controls,
+.reactflow-container .react-flow__minimap {
+  background-color: #fff; /* Белый фон */
+  color: #ff6f61; /* Коралловый текст */
+  box-shadow: 0px 0px 10px rgba(255, 111, 97, 0.5);
+}
+
+/* Фон ReactFlow */
+.reactflow-container .react-flow__background {
+  background-color: #f0f0f0; /* Светлый фон */
+  opacity: 0.5;
+}
